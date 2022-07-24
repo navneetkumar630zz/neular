@@ -1,0 +1,92 @@
+.Post {
+  padding: 2rem;
+  background: var(--light-grey);
+  display: flex;
+  height: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.6rem 2rem -1rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark-mode .Post {
+  background: var(--black);
+}
+.Post:hover,
+.Post:focus {
+  outline: none;
+  box-shadow: 0 0.8rem 4rem -1rem rgba(0, 0, 0, 0.4);
+  filter: brightness(0.9);
+  transform: scale(1.01);
+}
+.post__thumbnail {
+  width: 35rem;
+  margin-right: 3rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.post__thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post__content {
+  flex: 1;
+}
+.post__title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.post__readTime {
+  color: var(--grey);
+}
+.Post h3 {
+  flex: 1;
+  margin-right: 1rem;
+}
+.Post h5 {
+  color: var(--grey);
+  font-weight: normal;
+}
+.post__author {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.post__author-avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+.post__author span {
+  display: block;
+  color: var(--color-primary);
+}
+.post__author time {
+  color: var(--grey);
+}
+
+@media only screen and (max-width: 960px) {
+  .post__thumbnail {
+    width: 25rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .Post {
+    display: block;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  .post__thumbnail {
+    width: auto;
+    height: 20rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .post__title-container {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,44 @@
+.AllResponses {
+  max-width: 80rem;
+  margin: auto;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 4px double var(--light-grey);
+}
+.allResponses__header {
+  margin: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.allResponses__header h2 {
+  margin: 0;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.allResponses__search-container {
+  display: flex;
+  align-self: center;
+}
+.allResponses__search-container svg {
+  font-size: 3rem;
+  position: relative;
+  top: 5px;
+  margin-right: 1rem;
+  color: var(--grey);
+}
+.allResponses__search-container input {
+  border: none;
+  width: 0;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--grey);
+  transition: width 0.5s;
+}
+.allResponses__search-container:hover input {
+  width: 20rem;
+}
+.allResponses__search-container input:focus {
+  width: 20rem;
+  border-bottom-color: var(--color-primary);
+}

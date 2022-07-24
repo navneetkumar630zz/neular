@@ -1,0 +1,29 @@
+.Footer {
+  background-color: var(--color-primary);
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-top: 1rem;
+}
+.Footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Footer a {
+  font-size: 1.7rem;
+  color: var(--white);
+}
+.Footer a:hover {
+  color: var(--light-grey);
+}
+.Footer svg {
+  vertical-align: text-top;
+  color: rgb(250, 167, 167);
+}
+
+@media only screen and (max-width: 767px) {
+  .Footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}

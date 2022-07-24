@@ -1,0 +1,91 @@
+.Header {
+  box-shadow: 0 0.4rem 1.2rem 0 rgba(0, 0, 0, 0.05);
+}
+.Header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.Header a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.header__logo {
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Header form {
+  display: flex;
+  justify-content: center;
+  flex: 0.8;
+  margin-left: 3rem;
+  border-radius: 2rem;
+  background: var(--light-grey);
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+.Header form:hover {
+  border-color: var(--grey);
+}
+.Header form:focus-within {
+  flex: 0.85;
+  background: var(--white);
+  border-color: var(--grey);
+}
+.Header input {
+  width: 10%;
+  font-size: 1.7rem;
+  flex: 1;
+  border: none;
+  background: transparent;
+}
+.Header .search-button {
+  width: 6rem;
+  color: var(--white);
+  border: none;
+  transition: color 0.2s;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.Header .search-button:hover,
+.Header .search-button:focus,
+.Header .search-button:active {
+  filter: saturate(1.1);
+  box-shadow: -2px 0 5px #0005;
+}
+.Header .search-button svg {
+  position: relative;
+  top: 0.3rem;
+}
+.dark-mode-btn svg {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+.dark-mode .dark-mode-btn svg {
+  color: var(--white);
+}
+
+@media only screen and (max-width: 767px) {
+  .Header .container {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-row-gap: 1rem;
+  }
+  .Header .container > a {
+    order: 2;
+  }
+  .header__logo {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .Header form {
+    margin-left: 0;
+    grid-column: 1 / -1;
+    order: 4;
+  }
+  .SearchHistory {
+    order: 3;
+  }
+}

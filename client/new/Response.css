@@ -1,0 +1,29 @@
+.Response {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.response__avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 2rem;
+  border: 4px double var(--color-primary);
+  box-sizing: content-box;
+}
+.response__author-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.response__author-details span {
+  color: var(--color-primary);
+}
+.response__title {
+  font-weight: 500;
+}
+.response__content {
+  padding: 1.5rem;
+  box-shadow: 1px 1px 3px #0003;
+  border-radius: 6px;
+}

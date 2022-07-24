@@ -1,0 +1,33 @@
+.RelatedTags {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.RelatedTags h6 {
+  min-width: 15rem;
+}
+.RelatedTags ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+}
+
+.RelatedTags li button {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  text-transform: initial;
+  box-shadow: none;
+  background: var(--light-grey);
+}
+.RelatedTags li button:hover {
+  box-shadow: none;
+  background: #ddd;
+}
+
+@media only screen and (max-width: 767px) {
+  .RelatedTags {
+    display: block;
+  }
+}
